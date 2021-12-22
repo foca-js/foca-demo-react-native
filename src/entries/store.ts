@@ -8,7 +8,7 @@ const middleware: Middleware[] = [];
 
 if (process.env.NODE_ENV !== 'production') {
   middleware.push(
-    // 使用chrome控制台可查看redux日志
+    // 使用控制台可查看redux日志
     createLogger({
       collapsed: true,
       diff: true,
@@ -20,8 +20,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 store.init({
   middleware,
-  // 需要安装chrome插件才能看到日志
-  // https://github.com/zalmoxisus/redux-devtools-extension
+  // 需要安装软件 react-native-debugger 代替浏览器的debugger能看到日志
+  // https://github.com/jhen0409/react-native-debugger
   compose: process.env.NODE_ENV === 'production' ? void 0 : 'redux-devtools',
   persist: [
     {
