@@ -1,4 +1,4 @@
-import { store, useModel } from 'foca';
+import { useModel } from 'foca';
 import React, { FC, memo } from 'react';
 import { Button, StyleSheet, Text, View, TextStyle, ViewStyle } from 'react-native';
 import { counterModel } from '../../models/counterModel';

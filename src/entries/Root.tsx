@@ -1,7 +1,6 @@
 import './store';
 
 import React, { FC, memo } from 'react';
-import { Text, View } from 'react-native';
 import { FocaProvider } from 'foca';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
