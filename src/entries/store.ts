@@ -22,7 +22,7 @@ store.init({
   middleware,
   // 需要安装软件 react-native-debugger 代替浏览器的debugger能看到日志
   // https://github.com/jhen0409/react-native-debugger
-  compose: process.env.NODE_ENV === 'production' ? void 0 : 'redux-devtools',
+  compose: 'redux-devtools',
   persist: [
     {
       key: 'rn_foca_demo',
